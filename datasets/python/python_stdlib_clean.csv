@@ -27,7 +27,7 @@ ID,text,functionality,concept,directives,purpose,quality,control,structure,patte
 3,"class struct.Struct(format)
  Return a new Struct object which writes and reads binary data according to the format string format. Creating a Struct object once and calling its methods is more efficient than calling the struct functions with the same format since the format string only needs to be compiled once.
  
- New in version 2.5.",1,0,0,1,1,0,0,0,0,0,0,
+ New in version 2.5.",1,0,0,1,1,0,0,0,0,0,0,0
 4,"difflib.context_diff(a, b[, fromfile][, tofile][, fromfiledate][, tofiledate][, n][, lineterm])
  Compare a and b (lists of strings); return a delta (a generator generating the delta lines) in context diff format.
  
