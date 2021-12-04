@@ -37,6 +37,15 @@ def load_data(data_path, header = True):
     data = list(data_reader)
     return data
 
+def load_data_encoded(data_path, header = True):
+    data = open(data_path, 'r', encoding='cp850')
+    data_reader = csv.reader(data, delimiter=',')
+    if header:
+        next(data_reader, None)  # skip the headers
+
+    data = list(data_reader)
+    return data
+
 def save_data(data, data_path, header=None):
     data_f = open(data_path, 'w')
     data_writer = csv.writer(data_f, delimiter=',', quoting=csv.QUOTE_NONE,escapechar=' ')
