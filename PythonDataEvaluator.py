@@ -15,7 +15,7 @@ Original file is located at
 
 """# Ensemble Learning on Cado Dataset"""
 
-import scripts.dataset_utils as du
+
 
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
@@ -31,10 +31,19 @@ from sklearn.multiclass import OneVsRestClassifier
 from skmultilearn.problem_transform import BinaryRelevance, LabelPowerset, ClassifierChain
 from sklearn.ensemble import RandomForestClassifier
 import time
-import os
+import csv
 import sys
 
 MAX_NB_WORDS =20000
+
+def load_data_encoded(data_path, header = True):
+    data = open(data_path, 'r', encoding='cp850')
+    data_reader = csv.reader(data, delimiter=',')
+    if header:
+        next(data_reader, None)  # skip the headers
+
+    data = list(data_reader)
+    return data
 
 def tokenize_data(X):
     tokenizer = Tokenizer(num_words=MAX_NB_WORDS)
@@ -45,7 +54,7 @@ def preprocess_data():
 
     print("Preprocessing data...")
     data_path = 'datasets/python/python_stdlib_clean.csv'
-    data = du.load_data_encoded(data_path)
+    data = load_data_encoded(data_path)
     text_index = 1
     label_start_index = 2
     X = [d[text_index] for d in data]
