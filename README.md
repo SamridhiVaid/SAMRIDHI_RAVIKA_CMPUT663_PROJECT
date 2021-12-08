@@ -43,8 +43,8 @@ We have tested our code on lab machine (uc02.cs.ualberta.ca) by activating a vir
 
 The Cado dataset can be found at [datasets/cado](datasets/cado),and python dataset can be found at [datasets/python](datasets/python).
 
-## Output file 
-The output is stored in the csv file under Ouptut folder
+## Output 
+<>TODO
 
 ## Report
 The report is a pdf (named "report.pdf") found in the same directory as ReadMe.
