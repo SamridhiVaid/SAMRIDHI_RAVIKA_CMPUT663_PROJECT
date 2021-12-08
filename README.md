@@ -25,14 +25,20 @@ $ pip3 install  -r requirements.txt
 ## Execution
 Example usage: use the following commands in the current directory.
 To get Cado Results:
+
 `python3 CadoEvaluator.py --classifierchain`
+
 `python3 CadoEvaluator.py --labelpowerset`
+
 `python3 CadoEvaluator.py --binaryrelevance`
 
 
 To get Python Results:
+
 `python3 PythonDataEvaluator.py --classifierchain`
+
 `python3 PythonDataEvaluator.py --labelpowerset`
+
 `python3 PythonDataEvaluator.py --binaryrelevance`
 
 Execution Environment Used:
