@@ -145,7 +145,8 @@ def run_binary_relevance():
     my_metrics1= classification_report(y_test, predictions1)
     print(my_metrics1)
     print ("Hamming Loss:" )
-    print(hamming_loss(y_test,predictions1))
+    hamming_loss_data = hamming_loss(y_test,predictions1)
+    print(hamming_loss_data)
     print("Accuracy Score: ")
     print(accuracy_score(y_test,predictions1))
     pred = predictions1.toarray()
@@ -154,6 +155,15 @@ def run_binary_relevance():
         average_precision[i] = average_precision_score(y_test[:, i], pred[:, i])
     print("Average Precision:")
     print(average_precision)
+    file = open('Results_cado_binary_relevance.txt', 'w')
+    file.writelines('Individual Knowledge type Stats:' + '\n')
+    file.writelines('' + my_metrics1 + '\n')
+    file.writelines('Hamming Loss:' + '\n')
+    file.writelines('' + str(hamming_loss_data) + '\n')
+    file.writelines('Average Precision:' + '\n')
+    for d in average_precision:
+        file.writelines(str(d) + ':' + ' ' + str(average_precision.get(d)) + '\n')
+    file.close()
 
 
 
@@ -169,7 +179,8 @@ def run_label_powerset():
     my_metrics1= classification_report(y_test, predictions1)
     print(my_metrics1)
     print ("Hamming Loss:" )
-    print(hamming_loss(y_test,predictions1))
+    hamming_loss_data = hamming_loss(y_test,predictions1)
+    print(hamming_loss_data)
     print("Accuracy Score: ")
     print(accuracy_score(y_test,predictions1))
     pred = predictions1.toarray()
@@ -178,6 +189,15 @@ def run_label_powerset():
         average_precision[i] = average_precision_score(y_test[:, i], pred[:, i])
     print("Average Precision:")
     print(average_precision)
+    file = open('Results_cado_label_powerset.txt', 'w')
+    file.writelines('Individual Knowledge type Stats:' + '\n')
+    file.writelines('' + my_metrics1 + '\n')
+    file.writelines('Hamming Loss:' + '\n')
+    file.writelines('' + str(hamming_loss_data) + '\n')
+    file.writelines('Average Precision:' + '\n')
+    for d in average_precision:
+        file.writelines(str(d) + ':' + ' ' + str(average_precision.get(d)) + '\n')
+    file.close()
 
 """
 
@@ -194,7 +214,8 @@ def run_classifier_chain():
     my_metrics1= classification_report(y_test, predictions1)
     print(my_metrics1)
     print("Hamming Loss:")
-    print(hamming_loss(y_test, predictions1))
+    hamming_loss_data = hamming_loss(y_test, predictions1)
+    print(hamming_loss_data)
     print("Accuracy Score: ")
     print(accuracy_score(y_test, predictions1))
     pred = predictions1.toarray()
@@ -203,6 +224,16 @@ def run_classifier_chain():
         average_precision[i] = average_precision_score(y_test[:, i], pred[:, i])
     print("Average Precision:")
     print(average_precision)
+
+    file = open('Results_cado_classifier_chain.txt', 'w')
+    file.writelines('Individual Knowledge type Stats:' +  '\n')
+    file.writelines('' + my_metrics1 + '\n')
+    file.writelines('Hamming Loss:' + '\n')
+    file.writelines('' + str(hamming_loss_data) + '\n')
+    file.writelines('Average Precision:' + '\n')
+    for d in average_precision:
+        file.writelines(str(d) + ':' + ' ' + str(average_precision.get(d)) + '\n')
+    file.close()
 
 
 ## main method##
