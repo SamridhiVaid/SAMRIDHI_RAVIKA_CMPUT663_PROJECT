@@ -14,6 +14,9 @@
 $ virtualenv venv --python=python3
 $ source venv/bin/activate
 
+# clone the repo
+$git clone https://github.com/SamridhiVaid/SAMRIDHI_RAVIKA_CMPUT663_PROJECT.git
+
 # change directory to the repo where we have requirements file
 $ cd SAMRIDHI_RAVIKA_CMPUT663_PROJECT/
 
@@ -50,7 +53,7 @@ We have tested our code on lab machine (uc02.cs.ualberta.ca) by activating a vir
 The Cado dataset can be found at [datasets/cado](datasets/cado),and python dataset can be found at [datasets/python](datasets/python).
 
 ## Output 
-<>TODO
+The output files for each classifier for both the datasets can be found at [output/](output/) folder.
 
 ## Report
 The report is a pdf (named "report.pdf") found in the same directory as ReadMe.
