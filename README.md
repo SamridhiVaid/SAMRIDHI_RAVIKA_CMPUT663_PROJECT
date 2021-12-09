@@ -55,5 +55,8 @@ The Cado dataset can be found at [datasets/cado](datasets/cado),and python datas
 ## Output 
 The output files for each classifier for both the datasets can be found at [output/](output/) folder.
 
+## Notebooks 
+The colab notebooks used to replicate the work of Fucci. et al. can be found at [notebooks/](notebooks/) folder.
+
 ## Report
 The report is a pdf (named "report.pdf") found in the same directory as ReadMe.
