@@ -5,11 +5,6 @@ This repository provides contains artifacts for our Project: 'Using Problem Tran
 # Abstract
 API reference documentation is indispensable to software development. Earlier works studied how modern text classification approaches can automatically identify specific knowledge types in API reference documents. We investigate how effectively problem transformation approaches, which are less computationally costly, can identify certain knowledge types in manually annotated Java and .NET API documentation. We used the results of conventional machine learning (k-NN and SVM) and deep learning approaches from the previous study as our baseline and compared its performance to our proposed classifiers, i.e., Binary Relevance(BR), Label Powerset(LP), and Classifier Chain(CC). The best AUPRC of 99\% was reported when classifying knowledge categories individually (i.e., multiple binary classifiers). The BR and CC classifiers were complementary and delivered outstanding results than our baseline. Even when considering multiple knowledge types at once (i.e., multi-label classification), BR and CC classifier outperformed our baseline, achieving a MacroPrecision, MacroRecall, and MacroF1 of about 99\%. We re-tested our algorithms on the Python documentation dataset to assess how they generalize. Even though none of the classifiers generalized as well as models proposed by the previous work, the Binary Relevance method did show some promising results for the identification of multiple knowledge types.
 
-# Contibutors
-- Ravika Nagpal, [ravika@ualberta.ca](ravika@ualberta.ca)
-- Samridhi Vaid, [svaid@ualberta.ca](svaid@ualberta.ca)
-
-
 # Execution Instructions
 
 ## Hardware Requirements
@@ -66,3 +61,8 @@ The colab notebooks used to replicate the work of Fucci. et al. can be found at 
 
 ## Report
 The report is a pdf (named "report.pdf") found in the same directory as ReadMe.
+
+
+# Contibutors
+- Ravika Nagpal, [ravika@ualberta.ca](ravika@ualberta.ca)
+- Samridhi Vaid, [svaid@ualberta.ca](svaid@ualberta.ca)
