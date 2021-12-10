@@ -8,6 +8,9 @@
 
 # 2. Execution Instructions
 
+##Hardware Requirements
+You need to have a python installed on your machine. Or you can run below commands by connecting to one of the lab machines as shared in the [doc](https://docs.google.com/document/d/1Cz5zpYSWzm29epYLJM5FpGJHZNnoX9pz8sqt-gXhExg/edit)
+
 ## Setup
 ```sh
 # Setup python virtual environment
