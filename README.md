@@ -8,8 +8,10 @@
 
 # 2. Execution Instructions
 
-##Hardware Requirements
+## Hardware Requirements
 You need to have a python installed on your machine. Or you can run below commands by connecting to one of the lab machines as shared in the [doc](https://docs.google.com/document/d/1Cz5zpYSWzm29epYLJM5FpGJHZNnoX9pz8sqt-gXhExg/edit)
+Execution Environment Used:
+We have tested our code on lab machine (uc02.cs.ualberta.ca) by activating a virtual environment.
 
 ## Setup
 ```sh
@@ -47,8 +49,7 @@ To get Python Results:
 
 `python3 PythonDataEvaluator.py --binaryrelevance`
 
-Execution Environment Used:
-We have tested our code on lab machine (uc02.cs.ualberta.ca) by activating a virtual environment.
+
 
 
 ## Data
