@@ -50,8 +50,6 @@ To get Python Results:
 `python3 PythonDataEvaluator.py --binaryrelevance`
 
 
-
-
 ## Data
 
 The Cado dataset can be found at [datasets/cado](datasets/cado),and python dataset can be found at [datasets/python](datasets/python).
@@ -60,7 +58,7 @@ The Cado dataset can be found at [datasets/cado](datasets/cado),and python datas
 The output files for each classifier for both the datasets can be found at [output/](output/) folder.
 
 ## Notebooks 
-The colab notebooks used to replicate the work of Fucci. et al. can be found at [notebooks/](notebooks/) folder.
+The colab notebooks used to replicate the work of Fucci. et al. can be found at [notebooks/](notebooks/) folder. These notebooks contain the same code as provided by previous work and hosted at [DOI](https://zenodo.org/badge/latestdoi/194706952)
 
 ## Report
 The report is a pdf (named "report.pdf") found in the same directory as ReadMe.
