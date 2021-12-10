@@ -7,7 +7,7 @@
 ## Execution Instructions
 
 ### Hardware Requirements
-- You need to have a python installed on your machine to set up a virtual environment. Alternatively, you can connect to one of the lab machines using the ssh command as shared in the [doc](https://docs.google.com/document/d/1Cz5zpYSWzm29epYLJM5FpGJHZNnoX9pz8sqt-gXhExg/edit). Please follow the document to connect to the machine using ssh commant. Steps to setup a virtual environment is provided in the setup section below.
+- You need to have a python installed on your machine to set up a virtual environment. Alternatively, you can connect to one of the lab machines using the ssh command as shared in the [doc](https://docs.google.com/document/d/1Cz5zpYSWzm29epYLJM5FpGJHZNnoX9pz8sqt-gXhExg/edit). Please follow the document to connect to the machine using ssh command. Steps to setup a virtual environment is provided in the setup section below.
 
 - We have tested our code on lab machine (uc02.cs.ualberta.ca) by activating a virtual environment.
 
